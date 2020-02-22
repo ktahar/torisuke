@@ -1,0 +1,12 @@
+*~
+*.swp
+
+# ROS things
+src/CMakeLists.txt
+.catkin_workspace
+.catkin_tools
+build
+devel
+logs
+
+!/.editorconfig
