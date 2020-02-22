@@ -6,7 +6,7 @@ src/CMakeLists.txt
 .catkin_workspace
 .catkin_tools
 build
-devel
-logs
+install
+log
 
 !/.editorconfig

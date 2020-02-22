@@ -1,0 +1,6 @@
+[submodule "src/create_autonomy"]
+	path = src/create_autonomy
+	url = https://ktahar@github.com/ktahar/create_autonomy
+[submodule "src/libcreate"]
+	path = src/libcreate
+	url = https://ktahar@github.com/ktahar/libcreate
