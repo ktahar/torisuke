@@ -3,7 +3,7 @@
 Hello, I'm torisuke.
 
 ## Requirements
-- ROS2
+- ROS2 Dashing
 
 ## Notes on installation
 - `python3-argcomplete`
