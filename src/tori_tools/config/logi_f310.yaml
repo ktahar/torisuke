@@ -8,10 +8,10 @@ joy_teleop:
       deadman_buttons: [5] # RT
       axis_mappings:
         linear-x:
-          axis: 1
+          axis: 4 # right stick
           scale: 0.4
           offset: 0.0
-        angular-z:
+        angular-z: # left stick
           axis: 0
           scale: 2.5
 
