@@ -2,14 +2,12 @@
 
 Hello, I'm torisuke.
 
-## Requirements
+## Install
 - ROS2 Dashing
-
-## Notes on installation
 - `python3-argcomplete`
 - `python3-colcon-common-extensions`
 
-## Notes on build
+## Build
 
 1. Install deps
 
@@ -17,6 +15,13 @@ Hello, I'm torisuke.
 cd ~/torisuke
 rosdep update
 rosdep install --from-paths src -i
+```
+
+or `scripts/install.zsh`
+
+```bash
+cd ~/torisuke
+scripts/install.zsh
 ```
 
 2. Build
