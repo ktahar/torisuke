@@ -1,6 +1,7 @@
 *~
 *.swp
 compile_commands.json
+.clangd
 
 # ROS things
 .catkin_workspace
