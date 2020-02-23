@@ -1,8 +1,8 @@
 *~
 *.swp
+compile_commands.json
 
 # ROS things
-src/CMakeLists.txt
 .catkin_workspace
 .catkin_tools
 build
