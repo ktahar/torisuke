@@ -42,7 +42,7 @@ joy_teleop:
           scale: -0.5
           offset: 0.5
         side_brush:
-          axis: 2
+          axis: 5
           scale: -0.5
           offset: 0.5
         vacuum:
