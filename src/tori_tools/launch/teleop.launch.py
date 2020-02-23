@@ -17,10 +17,12 @@ def generate_launch_description():
     ])
 
     ld.add_action(launch_ros.actions.Node(
-            package='joy', node_executable='joy_node'))
+            package='joy', node_executable='joy_node',
+            output='screen'))
 
     ld.add_action(launch_ros.actions.Node(
             package='joy_teleop', node_executable='joy_teleop',
+            output='screen',
             parameters=[launch.substitutions.LaunchConfiguration('teleop_config')]))
 
     return ld

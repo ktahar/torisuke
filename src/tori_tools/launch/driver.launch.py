@@ -18,6 +18,7 @@ def generate_launch_description():
 
     ld.add_action(launch_ros.actions.Node(
             package='ca_driver', node_executable='ca_driver',
+            output='screen',
             parameters=[launch.substitutions.LaunchConfiguration('driver_config')]))
 
     return ld
