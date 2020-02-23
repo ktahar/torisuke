@@ -8,10 +8,10 @@ joy_teleop:
       deadman_buttons: [5] # RT
       axis_mappings:
         linear-x:
-          axis: 4 # right stick
+          axis: 4 # right stick UpDown
           scale: 0.4
           offset: 0.0
-        angular-z: # left stick
+        angular-z: # left stick LeftRight
           axis: 0
           scale: 2.5
 
@@ -19,7 +19,7 @@ joy_teleop:
       type: topic
       interface_type: std_msgs/msg/Empty
       topic_name: dock
-      deadman_buttons: [3, 5] # Y
+      deadman_buttons: [3, 5] # Y + RT
       match: all
       message_value: []
 
@@ -27,6 +27,25 @@ joy_teleop:
       type: topic
       interface_type: std_msgs/msg/Empty
       topic_name: undock
-      deadman_buttons: [1, 5] # B
+      deadman_buttons: [1, 5] # B + RT
       match: all
       message_value: []
+
+    motor_on:
+      type: topic
+      interface_type: ca_msgs/msg/Motor
+      topic_name: motor
+      deadman_buttons: [5] # RT
+      axis_mappings:
+        main_brush:
+          axis: 2
+          scale: -0.5
+          offset: 0.5
+        side_brush:
+          axis: 2
+          scale: -0.5
+          offset: 0.5
+        vacuum:
+          axis: 2
+          scale: -0.5
+          offset: 0.5
