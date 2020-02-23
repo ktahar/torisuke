@@ -9,18 +9,15 @@ def generate_launch_description():
 
     parameters_file = os.path.join(
         get_package_share_directory('tori_tools'),
-        'config', 'logi_f310.yaml'
+        'config', 'driver.yaml'
     )
 
     ld = LaunchDescription([
-        launch.actions.DeclareLaunchArgument('teleop_config', default_value=parameters_file),
+        launch.actions.DeclareLaunchArgument('driver_config', default_value=parameters_file),
     ])
 
     ld.add_action(launch_ros.actions.Node(
-            package='joy', node_executable='joy_node'))
-
-    ld.add_action(launch_ros.actions.Node(
-            package='joy_teleop', node_executable='joy_teleop',
-            parameters=[launch.substitutions.LaunchConfiguration('teleop_config')]))
+            package='ca_driver', node_executable='ca_driver',
+            parameters=[launch.substitutions.LaunchConfiguration('driver_config')]))
 
     return ld
