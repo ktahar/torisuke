@@ -19,12 +19,14 @@ joy_teleop:
       type: topic
       interface_type: std_msgs/msg/Empty
       topic_name: dock
-      deadman_buttons: [3] # Y
+      deadman_buttons: [3, 5] # Y
+      match: all
       message_value: []
 
     undock:
       type: topic
       interface_type: std_msgs/msg/Empty
       topic_name: undock
-      deadman_buttons: [1] # B
+      deadman_buttons: [1, 5] # B
+      match: all
       message_value: []

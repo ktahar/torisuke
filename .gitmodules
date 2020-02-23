@@ -4,3 +4,6 @@
 [submodule "src/libcreate"]
 	path = src/libcreate
 	url = https://ktahar@github.com/ktahar/libcreate
+[submodule "src/teleop_tools"]
+	path = src/teleop_tools
+	url = https://ktahar@github.com/ktahar/teleop_tools
