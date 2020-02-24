@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+script_dir=$(cd $(dirname $0); pwd)
+
 d=ros-dashing
 p=python3
 pkgs=("${d}-joy" "${p}-argcomplete" "${p}-colcon-common-extensions")
@@ -10,9 +12,8 @@ else
     echo "All required apt packages are installed"
 fi
 
-col="source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh"
-if ! grep $col ~/.zshrc &> /dev/null; then
-    echo $col >> ~/.zshrc
+if ! grep "tori ()" ~/.zshrc &> /dev/null; then
+    cat ${script_dir}/zshrc >> ~/.zshrc
 else
-    echo "colcon-argcomplete has been set up already."
+    echo "zshrc has been set up already."
 fi

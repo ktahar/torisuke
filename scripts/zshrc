@@ -1,0 +1,7 @@
+# ROS2 settings for torisuke
+tori () {
+    source /opt/ros/dashing/setup.zsh
+    source ~/torisuke/install/local_setup.zsh
+    eval "$(register-python-argcomplete3 colcon)"
+    alias cb="cd ~/torisuke/ && colcon build"
+}
